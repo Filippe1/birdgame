@@ -46,8 +46,9 @@ class Pipe {
 // Load all images before the game starts
 function preload() {
   // Load four bird frames for animation (replace with actual Imgur URLs)
-  for (let i = 0; i < 4; i++) {
-    birdFrames[i] = loadImage(`https://i.imgur.com/bird${i}.png`); // Placeholder URLs
+  for (let i = 1; i < 5; i++) {
+    console.log(i);
+    birdFrames[i - 1] = loadImage(`https://filippe1.github.io/birdgame/bird${i}.png`); // Placeholder URLs
   }
   
   // Load pipe, background, and base images from Flappy Bird Assets GitHub
